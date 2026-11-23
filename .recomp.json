@@ -1,0 +1,13 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Vigilante 8 - 2nd Offense",
+  "system": "PS1",
+  "type": "recomp",
+  "toolchain": "psxrecomp",
+  "status": "exploring",
+  "project": "vigilante-8-2nd-offense-recomp",
+  "original": {
+    "region": "Europe",
+    "serial": "SLES-02162"
+  }
+}

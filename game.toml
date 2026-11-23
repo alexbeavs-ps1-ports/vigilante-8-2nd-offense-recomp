@@ -1,0 +1,59 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Vigilante 8 - 2nd Offense"
+id = "SLES-02162"
+players = 1
+exe = "disc/SLES_021.62"
+disc = "disc/Vigilante 8 - 2nd Offense (Europe).cue"
+discs = ["disc/Vigilante 8 - 2nd Offense (Europe).cue"]
+disc_serials = ["SLES-02162"]
+load_address = "0x80010000"
+entry_pc = "0x80011540"
+text_size = "0x0005B800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Vigilante 8 - 2nd Offense (Europe) (Track 1).bin"
+cue_name = "Vigilante 8 - 2nd Offense (Europe).cue"
+boot_exe = "SLES_021.62"
+known_sizes = [347477424]
+known_md5 = [
+  "96bd668aee45accceccd0f6fb188b461",
+]
+known_sha1 = [
+  "dcc9727dd5f7d7ae8ba1350eb3dfd6ab8bfc38b5",
+]
+known_crc32 = [
+  "f774969d",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "Vigilante 8 - 2nd Offense Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 17
+required_disc_fp = "3230650bd4c1cba35402f161ddf2e6ff2b306cff810cbe7a41c9a74bb0fcbe77"

@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "id": "vigilante-8-2nd-offense-psx",
+  "name": "Vigilante 8 - 2nd Offense",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "vigilante-8-2nd-offense-recomp",
+  "rom_identity": {
+    "crc32": [
+      "f774969d"
+    ],
+    "md5": [
+      "96bd668aee45accceccd0f6fb188b461"
+    ],
+    "sha1": [
+      "dcc9727dd5f7d7ae8ba1350eb3dfd6ab8bfc38b5"
+    ],
+    "disc_serials": [
+      "SLES-02162"
+    ],
+    "sizes": [
+      347477424
+    ],
+    "filenames": [
+      "Vigilante 8 - 2nd Offense (Europe).cue",
+      "Vigilante 8 - 2nd Offense (Europe) (Track 1).bin"
+    ],
+    "track_counts": [
+      17
+    ],
+    "disc_fps": [
+      "3230650bd4c1cba35402f161ddf2e6ff2b306cff810cbe7a41c9a74bb0fcbe77"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH5552.BIN",
+    "profile": "SCPH5552",
+    "crc32": [
+      "d786f0b9"
+    ],
+    "md5": [
+      "32736f17079d0b2b7024407c39bd3050"
+    ],
+    "sha1": [
+      "f6bc2d1f5eb6593de7d089c425ac681d6fffd3f0"
+    ],
+    "sha256": [
+      "1faaa18fa820a0225e488d9f086296b8e6c46df739666093987ff7d8fd352c09"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH5552.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/vigilante-8-2nd-offense-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "vigilante-8-2nd-offense-*-windows-x64.zip",
+      "linux-x64": "vigilante-8-2nd-offense-*-linux-x64.zip",
+      "macos-arm64": "vigilante-8-2nd-offense-*-macos-arm64.zip",
+      "macos-x64": "vigilante-8-2nd-offense-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "vigilante_8_2nd_offense.exe",
+    "linux": "vigilante_8_2nd_offense",
+    "macos": "vigilante_8_2nd_offense"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/vigilante-8-2nd-offense-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}

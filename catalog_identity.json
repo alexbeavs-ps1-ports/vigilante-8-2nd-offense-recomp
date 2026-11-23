@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Vigilante 8 - 2nd Offense",
+    "id": "SLES-02162",
+    "boot_exe": "SLES_021.62"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Vigilante 8 - 2nd Offense (Europe).cue",
+    "bin_name": "Vigilante 8 - 2nd Offense (Europe) (Track 1).bin",
+    "track_counts": [
+      17
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 347477424,
+      "md5": "96bd668aee45accceccd0f6fb188b461",
+      "sha1": "dcc9727dd5f7d7ae8ba1350eb3dfd6ab8bfc38b5",
+      "crc32": "f774969d"
+    },
+    "disc_fp": "3230650bd4c1cba35402f161ddf2e6ff2b306cff810cbe7a41c9a74bb0fcbe77"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80011540",
+    "text_size": "0x0005B800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 824,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
